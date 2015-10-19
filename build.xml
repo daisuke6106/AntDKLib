@@ -161,7 +161,7 @@
 		■■     
 		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 	 -->
-	<target name="jar" depends="aspectj_compile">
+	<target name="jar" depends="compile">
 	  	<delete dir="${jar.delete.dir}" />
 	  	<jar jarfile  = "${jar.jar.jarfile}"
 	         basedir  = "${jar.jar.basedir}" >
@@ -178,7 +178,7 @@
 		■■     
 		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 	 -->
-	<target name="jar_all" depends="aspectj_compile">
+	<target name="jar_all" depends="compile">
 	  	<delete dir="${jar_all.delete.dir}" />
 	  	<jar jarfile  = "${jar_all.jar.jarfile}"
 	         basedir  = "${jar_all.jar.basedir}" >
